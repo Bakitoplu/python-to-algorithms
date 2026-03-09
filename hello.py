@@ -1,24 +1,77 @@
-# Kullanıcıya ismini sor
+# Kullanıcıdan isim al
 name = input("What's your name?: ")
-# Kullanıcıya merhaba de
+
+# Çok satırlı yorum örneği
 """
-    is a comment
+Bu bir açıklama bloğudur.
+Python bunu çalıştırır ama bir değişkene atanmadığı için
+programın akışında kullanılmaz.
 """
-print("hello,",name)
-print("hello,"+name)
+
+# İsmi ekrana yazdırmanın farklı yolları
+print("hello,", name)          # Virgülle ayrı argüman gönderme
+print("hello," + name)         # String birleştirme
 print("hello,")
 print(name)
 
-# print(*objects, sep=' ', end='\n', file=None, flush=False) bu print fonksiyonunun dökümanda ki tanımı
+# f-string kullanımı
+# Süslü parantez içindeki değişkenler doğrudan metnin içine yerleştirilir.
+print(f"Hello, {name}")
 
-# print(fonksiyon adı) "()" (aldığı argümanları içinde bulundurur) "*objects" (harhangi bir sayıda nesne alabilir) "sep" (seperator demek yani ayırıcı bir sonra ki argüman ile bu argümanı ne ile ayıracağını belirtir) "end" (fonksiyonun ne ile biteceğini belirtir) "\n" (yeni satır)
+print("-" * 50)
 
-# Burada print bitişinde artık alt satıra geçmeyecek
+# print() fonksiyonunun temel yapısı:
+# print(*objects, sep=' ', end='\n', file=None, flush=False)
+#
+# objects : Yazdırılacak değerler
+# sep     : Değerler arasına konulacak ayırıcı
+# end     : Yazının sonunda ne olacağını belirler
+# \n      : Yeni satır anlamına gelir
 
-print("hello,",end="")
+# end="" kullanılırsa print alt satıra geçmez.
+print("hello,", end="")
 print(name)
 
-# Burada iki argüman arasında artık boşluk olmayacak
+# sep parametresi birden fazla değer arasındaki ayırıcıyı belirler.
+print("hello,", name, sep="")
 
-print("hello,",sep="")
+print("-" * 50)
+
+# Tırnak işaretlerini doğru kullanma
+# Aynı tırnak türünü metin içinde kullanacaksak kaçış karakteri gerekir.
+# print("Hello,"Friends"")  # Hatalı kullanım
+
+print('Hello, "friends"')
+print("Hello, \"friends\"")
+
+print("-" * 50)
+
+# strip() metnin başındaki ve sonundaki boşlukları temizler.
+name = name.strip()
 print(name)
+
+# capitalize() metnin ilk harfini büyük harf ile değiştirir.
+name = name.capitalize()
+print(name)
+
+# title() metinde ki her kelimenin ilk harfini büyük harf ile değiştirir
+name = name.title()
+print(name)
+
+# string fonksiyonları zincileme da kullanabiliriz
+name = name.strip().title()
+name = input("What's your name?: ").strip().title()
+print(name)
+
+# split() dizeyi birden fazla dize halinde böler
+first , last = name.split(" ")
+print(f"Hello, {name}")
+
+print("-" * 50)
+
+"""
+   (\_/)
+   (•.•)   __)
+   /|     /
+   /> <\
+"""
