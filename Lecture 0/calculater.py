@@ -1,6 +1,6 @@
 # ==================================================
-# calculater.py
-# CS50 Python / Week 0 tarzı Türkçe öğretici not dosyası
+# 2. DOSYA: calculater.py
+# CS50 Python Türkçe öğretici not dosyası
 # Bu dosyada toplama, veri türü dönüşümü, ondalıklı sayılar,
 # yuvarlama, sayı biçimlendirme ve fonksiyon kullanımı işlenmektedir.
 # ==================================================
@@ -118,9 +118,19 @@ print("-" * 50)
 # Yani biri square(5) yazarsa, burada n değeri 5 olur.
 
 # !!! ÖNEMLİ
-# main() fonksiyonu önemlidir çünkü programın başlangıç akışını tek yerde toplar.
-# Kod büyüdükçe hangi işlemin nerede başladığını görmek kolaylaşır.
-# Bu yapı daha düzenli, okunabilir ve geliştirilebilir dosyalar yazmayı sağlar.
+# main() yapısı burada çok önemlidir.
+# Normalde Python'da bir fonksiyonu kullanmadan önce onu tanımlamış olmamız gerekir.
+# Yani square() fonksiyonunu dosyanın üst kısmında çağıracaksak,
+# Python square() tanımını daha önce görmüş olmalıdır.
+#
+# main() kullanınca akışı daha rahat kurabiliriz:
+# Üst tarafta önce def ile fonksiyonlarımızı tanımlarız,
+# alt tarafta ise sadece main() çağırırız.
+# Böylece fonksiyonları mantıklı sırada yazabiliriz ve
+# "çağrıyı yukarıda, tanımı aşağıda nasıl kullanırım?" sorunu yaşamayız.
+#
+# Kısacası main() yapısının asıl amacı sadece görüntüyü güzelleştirmek değil,
+# programın çalışma akışını doğru ve kontrollü şekilde kurmaktır.
 def main():
     x = int(input("X değerini giriniz: "))
     print("x'in karesi:", square(x))
@@ -128,12 +138,20 @@ def main():
 
 def square(n):
     # Burada sayının karesini alıyoruz.
-    # Aşağıdaki üç yöntem aynı mantığa hizmet eder:
-    # return n * n
-    # return n ** 2
-    # return pow(n, 2)
-    #
-    # Biz burada pow() fonksiyonunu kullanıyoruz.
+    # Aşağıdaki üç yöntem aynı mantığa hizmet eder.
+    # Eski / daha açık yaklaşım:
+    return n * n
+
+
+def square_uslu(n):
+    # Aynı işlemi üs alma operatörü ile de yapabiliriz.
+    # Bu yöntem de doğrudur ve öğretici olduğu için görünür bırakıyoruz.
+    return n ** 2
+
+
+def square_pow(n):
+    # Aynı işlemi pow() fonksiyonu ile de yapabiliriz.
+    # Yani burada üç farklı yazımın da aynı mantığa çıktığını görüyoruz.
     return pow(n, 2)
 
 
@@ -142,42 +160,56 @@ main()
 print("-" * 50)
 
 # ------------------------------------------------------------------
-# 8) KAYNAKÇA
+# 8) FARKLI KARE ALMA YÖNTEMLERİNİ KARŞILAŞTIRMA
+# ------------------------------------------------------------------
+# Burada aynı sayı üzerinde üç farklı yaklaşımın da aynı sonucu verdiğini
+# görüyoruz. Böylece eski yöntemlerin yanlış değil,
+# sadece farklı yazımlar olduğunu daha net anlayabiliriz.
+example_number = 5
+print(f"Örnek sayı: {example_number}")
+print(f"Çarpma ile kare alma: {square(example_number)}")
+print(f"Üs alma ile kare alma: {square_uslu(example_number)}")
+print(f"pow() ile kare alma: {square_pow(example_number)}")
+
+print("-" * 50)
+
+# ------------------------------------------------------------------
+# 9) KAYNAKÇA
 # ------------------------------------------------------------------
 # Ana kaynak:
 # CS50 Python Notes 0
 # https://cs50.harvard.edu/python/notes/0/
 # Kullanım alanı: Bu dosyanın genel konusu ve örnek akışı
-# İlgili satırlar: 1-143
+# İlgili satırlar: 1-166
 #
 # Python dokümantasyon kaynakları:
 # input()
 # https://docs.python.org/3/library/functions.html#input
-# İlgili satırlar: 33, 34, 44, 45, 55, 56, 126
+# İlgili satırlar: 32, 33, 43, 44, 54, 55, 129
 #
 # print()
 # https://docs.python.org/3/library/functions.html#print
-# İlgili satırlar: 17, 19, 35, 37, 46, 48, 61, 63, 77, 81, 83, 91, 100, 104, 106, 127, 143
+# İlgili satırlar: 16, 18, 34, 36, 45, 47, 58, 60, 74, 78, 80, 88, 97, 101, 103, 130, 149, 150, 151, 152
 #
 # int()
 # https://docs.python.org/3/library/functions.html#int
-# İlgili satırlar: 44, 45, 126
+# İlgili satırlar: 43, 44, 129
 #
 # float()
 # https://docs.python.org/3/library/functions.html#float
-# İlgili satırlar: 55, 56
+# İlgili satırlar: 54, 55
 #
 # round()
 # https://docs.python.org/3/library/functions.html#round
-# İlgili satırlar: 76, 99
+# İlgili satırlar: 73, 96
 #
 # pow()
 # https://docs.python.org/3/library/functions.html#pow
-# İlgili satırlar: 138
+# İlgili satırlar: 126
 #
 # Formatted string literals (f-string)
 # https://docs.python.org/3/reference/lexical_analysis.html#f-strings
-# İlgili satırlar: 81, 104
+# İlgili satırlar: 78, 101, 149, 150, 151, 152
 
 """
    (\_/)

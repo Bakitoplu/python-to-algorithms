@@ -1,6 +1,6 @@
 # ==================================================
-# hello.py
-# CS50 Python / Week 0 tarzı Türkçe öğretici not dosyası
+# 1. DOSYA: hello.py
+# CS50 Python Türkçe öğretici not dosyası
 # Bu dosyada kullanıcıdan veri alma, ekrana yazdırma,
 # string metotları, fonksiyonlar ve scope mantığını göreceğiz.
 # ==================================================
@@ -216,36 +216,36 @@ print("-" * 50)
 # CS50 Python Notes 0
 # https://cs50.harvard.edu/python/notes/0/
 # Kullanım alanı: Bu dosyanın genel konusu ve örnek akışı
-# İlgili satırlar: 1-151
+# İlgili satırlar: 1-157
 #
 # Python dokümantasyon kaynakları:
 # input()
 # https://docs.python.org/3/library/functions.html#input
-# İlgili satırlar: 11, 87, 122
+# İlgili satırlar: 11, 117, 167
 #
 # print()
 # https://docs.python.org/3/library/functions.html#print
-# İlgili satırlar: 26, 31, 34, 35, 40, 55, 56, 59, 73, 76, 90, 98, 106, 107, 108, 125, 136
+# İlgili satırlar: 24, 33, 38, 39, 44, 61, 62, 65, 82, 86, 100, 101, 102, 112, 119, 135, 144
 #
 # str.strip()
 # https://docs.python.org/3/library/stdtypes.html#str.strip
-# İlgili satırlar: 74, 88, 122
+# İlgili satırlar: 88, 104, 117
 #
 # str.capitalize()
 # https://docs.python.org/3/library/stdtypes.html#str.capitalize
-# İlgili satırlar: 78
+# İlgili satırlar: 93
 #
 # str.title()
 # https://docs.python.org/3/library/stdtypes.html#str.title
-# İlgili satırlar: 82, 88, 122
+# İlgili satırlar: 97, 104, 117
 #
 # str.split()
 # https://docs.python.org/3/library/stdtypes.html#str.split
-# İlgili satırlar: 98
+# İlgili satırlar: 113
 #
 # Formatted string literals (f-string)
 # https://docs.python.org/3/reference/lexical_analysis.html#f-strings
-# İlgili satırlar: 40, 90, 106, 107, 108, 133
+# İlgili satırlar: 44, 123, 144
 
 """
    (\_/)

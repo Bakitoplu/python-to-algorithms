@@ -1,6 +1,6 @@
 # ==================================================
-# compare.py
-# CS50 Python / Week 1 tarzı Türkçe öğretici not dosyası
+# 3. DOSYA: compare.py
+# CS50 Python Türkçe öğretici not dosyası
 # Bu dosyada if, elif, else, karşılaştırma operatörleri
 # ve birden fazla farklı karşılaştırma yaklaşımı işlenmektedir.
 # ==================================================
@@ -84,7 +84,7 @@ print("-" * 50)
 # CS50 Python Notes 1
 # https://cs50.harvard.edu/python/notes/1/
 # Kullanım alanı: if statements, elif, else, or, compare örneği
-# İlgili satırlar: 1-73
+# İlgili satırlar: 1-98
 #
 # Python dokümantasyon kaynakları:
 # input()
@@ -97,7 +97,7 @@ print("-" * 50)
 #
 # print()
 # https://docs.python.org/3/library/functions.html#print
-# İlgili satırlar: 14, 25, 27, 29, 42, 44, 46, 59, 61, 70, 72
+# İlgili satırlar: 14, 15, 27, 29, 31, 44, 46, 48, 61, 63, 72, 74
 
 """
    (\_/)

@@ -1,6 +1,6 @@
 # ==================================================
-# grade.py
-# CS50 Python / Week 1 tarzı Türkçe öğretici not dosyası
+# 4. DOSYA: grade.py
+# CS50 Python Türkçe öğretici not dosyası
 # Bu dosyada karşılaştırma operatörleri, and kullanımı,
 # zincirli karşılaştırma ve daha kısa not hesaplama mantığı işlenmektedir.
 # ==================================================
@@ -94,20 +94,20 @@ print("-" * 50)
 # CS50 Python Notes 1
 # https://cs50.harvard.edu/python/notes/1/
 # Kullanım alanı: Conditionals, and, zincirli karşılaştırma, grade örneği
-# İlgili satırlar: 1-79
+# İlgili satırlar: 1-81
 #
 # Python dokümantasyon kaynakları:
 # input()
 # https://docs.python.org/3/library/functions.html#input
-# İlgili satırlar: 10
+# İlgili satırlar: 12
 #
 # int()
 # https://docs.python.org/3/library/functions.html#int
-# İlgili satırlar: 10
+# İlgili satırlar: 12
 #
 # print()
 # https://docs.python.org/3/library/functions.html#print
-# İlgili satırlar: 12, 31, 52, 73, 79
+# İlgili satırlar: 14, 33, 54, 75, 81
 
 """
    (\_/)
