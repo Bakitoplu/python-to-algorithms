@@ -156,10 +156,19 @@ print("-" * 50)
 #              Eğer kullanıcı bir değer göndermezse to değişkeni "World" olur.
 
 # !!! ÖNEMLİ
-# main() yapısı önemlidir çünkü programın giriş noktasını düzenli hale getirir.
-# Kodun hangi sırayla çalışacağını daha okunur yapar.
-# Özellikle fonksiyon sayısı arttığında dosyanın üst kısmında tanımlar,
-# alt kısmında ise çağrılar bulunur. Bu da kodu takip etmeyi kolaylaştırır.
+# main() yapısı burada çok önemlidir.
+# Normalde Python'da bir fonksiyonu kullanmadan önce onu tanımlamış olmamız gerekir.
+# Yani hello() fonksiyonunu dosyanın üst kısmında çağıracaksak,
+# Python hello() tanımını daha önce görmüş olmalıdır.
+#
+# main() kullanınca akışı daha rahat kurabiliriz:
+# Üst tarafta önce def ile fonksiyonlarımızı tanımlarız,
+# alt tarafta ise sadece main() çağırırız.
+# Böylece fonksiyonları mantıklı sırada yazabiliriz ve
+# "çağrıyı yukarıda, tanımı aşağıda nasıl kullanırım?" sorunu yaşamayız.
+#
+# Kısacası main() yapısının asıl amacı sadece görüntüyü güzelleştirmek değil,
+# programın çalışma akışını doğru ve kontrollü şekilde kurmaktır.
 def main():
     # Kullanıcıdan isim alıyoruz.
     # strip() ve title() ile veriyi daha temiz ve düzenli hale getiriyoruz.
